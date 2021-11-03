@@ -51,7 +51,7 @@ def get_new_quote():
         logging.error(f'Ошибка при запросе к bash: {e}')
         response = 'Новой цитаты не будет :( Попробуй позже'
     text = response.text
-    if isinstance(text, str):
+    if isinstance(response, str):
         return text
     return corrector(text)
 
