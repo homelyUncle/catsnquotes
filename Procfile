@@ -1,0 +1,1 @@
+worker: python kitty_bot.py
